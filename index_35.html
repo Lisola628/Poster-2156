@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conoce a una voz que resiste · Póster de campaña · SPAN 2156</title>
+<meta name="description" content="Hoja de asignación del póster de campaña, SPAN 2156 Voces que resisten, Fall 2026.">
+<style>
+:root{
+  --ink:#1c1917; --ink2:#3d3d3d; --mute:#595959;
+  --green:#1B5E4A; --mint:#EAF2EF; --gold:#E0A526; --goldbg:#FBF3DF;
+  --plum:#5B2B6B; --plumbg:#F0EAF3; --paper:#FAF9F6; --line:#d9d6d0; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 Georgia,serif}
+h1,h2,h3,.sans{font-family:Arial,Helvetica,sans-serif}
+a{color:var(--green)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+/* hero */
+.hero{background:var(--plum);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-80px;top:-80px;width:340px;height:340px;border-radius:50%;background:var(--gold);opacity:.18}
+.kicker{font:700 14px/1 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#F6D98B;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,6vw,56px);line-height:1.08;margin:0 0 16px;max-width:760px}
+.hero p.lead{font-size:20px;max-width:680px;margin:0 0 26px;color:#f3ecf6}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{font:700 14px Arial,sans-serif;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);padding:8px 14px;border-radius:999px}
+.pill.gold{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+/* nav */
+nav{position:sticky;top:0;z-index:5;background:var(--white);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:6px;padding-bottom:6px}
+nav a{font:700 14px Arial,sans-serif;text-decoration:none;color:var(--ink);padding:8px 12px;border-radius:8px;white-space:nowrap}
+nav a:hover{background:var(--mint)}
+/* sections */
+section{padding:52px 0 8px}
+.num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--green);color:#fff;font:700 18px Arial,sans-serif;margin-right:10px}
+h2{font-size:30px;margin:0 0 6px;display:flex;align-items:center}
+.sub{color:var(--mute);margin:0 0 24px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:760px){.g2,.g3{grid-template-columns:1fr}}
+/* formula */
+.formula{background:var(--goldbg);border:2px solid var(--gold);border-radius:16px;padding:26px 28px;text-align:center}
+.formula .f{font:700 clamp(20px,3.6vw,30px)/1.3 Arial,sans-serif}
+.formula .f span{background:var(--white);border-bottom:3px solid var(--plum);padding:0 8px;border-radius:4px;color:var(--plum)}
+.ex{border-left:5px solid var(--plum);background:var(--plumbg);border-radius:0 10px 10px 0;padding:14px 18px}
+.ex b{font-family:Arial,sans-serif}
+/* elements */
+.el{border-top:5px solid var(--green)}
+.el h3{margin:0 0 6px;font-size:19px}
+.el p{margin:0;font-size:16px;color:var(--ink2)}
+.el.gold{border-top-color:var(--gold)}
+.el.plum{border-top-color:var(--plum)}
+/* timeline */
+.tl{list-style:none;margin:0;padding:0 0 0 8px;border-left:4px solid var(--green)}
+.tl li{position:relative;padding:0 0 22px 26px}
+.tl li::before{content:"";position:absolute;left:-14px;top:4px;width:20px;height:20px;border-radius:50%;background:var(--white);border:4px solid var(--gold)}
+.tl li.big::before{background:var(--plum);border-color:var(--plum)}
+.tl .d{font:700 15px Arial,sans-serif;color:var(--green);display:block}
+.tl .big .d{color:var(--plum)}
+/* rubric */
+.bar{display:grid;grid-template-columns:1fr 64px;gap:12px;align-items:center;margin-bottom:14px}
+.bar .t{font-size:16px}
+.bar .t small{display:block;color:var(--mute);font-size:14px}
+.bar .v{font:700 20px Arial,sans-serif;text-align:right}
+.track{grid-column:1/-1;height:12px;background:var(--mint);border-radius:6px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--green)}
+/* voices */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.chip{font:700 14px Arial,sans-serif;background:var(--white);border:2px solid var(--green);color:var(--green);padding:7px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--green);color:#fff}
+.chip:focus-visible,nav a:focus-visible,input:focus-visible{outline:3px solid var(--plum);outline-offset:2px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.voice{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.voice h3{margin:0 0 2px;font-size:17px}
+.voice .m{font-size:14px;color:var(--mute);margin:0 0 8px}
+.ods{display:inline-block;font:700 12px Arial,sans-serif;background:var(--plum);color:#fff;border-radius:4px;padding:3px 7px;margin-right:4px}
+.note{background:var(--mint);border-radius:12px;padding:16px 20px;margin-top:16px;font-size:16px}
+/* a11y list */
+.check{list-style:none;padding:0;margin:0}
+.check li{padding:8px 0 8px 34px;position:relative;border-bottom:1px solid var(--line);font-size:17px}
+.check li::before{content:"✓";position:absolute;left:0;top:7px;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font:700 14px/24px Arial,sans-serif;text-align:center}
+footer{margin-top:56px;background:var(--ink);color:#fff;padding:26px 0;font:15px/1.6 Arial,sans-serif}
+footer p{margin:0}
+@page{size:Letter;margin:.5in}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-size:12.5px;line-height:1.45;background:#fff}
+nav,.chips,footer{display:none}
+.hero{padding:22px 0 24px}.hero::after{display:none}.hero h1{font-size:30px;margin-bottom:8px}.hero p.lead{font-size:14px;margin-bottom:12px}
+.wrap{max-width:none;padding:0}.hero .wrap{padding:0 .3in}
+section{padding:16px 0 0}h2{font-size:20px}.num{width:26px;height:26px;font-size:14px}.sub{margin-bottom:10px;font-size:12px}
+.card{padding:10px 12px;border-radius:8px}.el h3{font-size:14px}.el p{font-size:12px}
+.grid{gap:8px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.formula{padding:12px}.formula .f{font-size:19px}.ex{padding:8px 12px;font-size:12px}
+.note{font-size:12px;padding:10px 12px}.check li{font-size:12.5px;padding:5px 0 5px 30px}
+.tl li{padding-bottom:10px}.bar{margin-bottom:8px}.bar .t{font-size:12.5px}
+.card,.voice,.ex,.note,.tl li,.bar{break-inside:avoid}h2,.sub{break-after:avoid}
+.vgrid{grid-template-columns:repeat(3,1fr);gap:6px}.voice{padding:6px 9px}.voice h3{font-size:12.5px}.voice .m{font-size:10.5px;margin-bottom:4px}.ods{font-size:9.5px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">SPAN 2156 · Voces que resisten · Fall 2026 · Proyecto 2 de 4</p>
+    <h1>Conoce a una voz que resiste</h1>
+    <p class="lead">Elige una voz real —una artista, un colectivo, un movimiento— y diseña una campaña que la lleve a una audiencia que quizá no la conoce. No hablas <em>por</em> ella: la amplificas y le das crédito.</p>
+    <div class="pills">
+      <span class="pill gold">20% de la nota</span>
+      <span class="pill">Taller Canva · lun 26 oct</span>
+      <span class="pill">Presentaciones · 11 y 13 nov</span><a class="pill" href="deck.html" style="color:#fff;text-decoration:underline">Ver la presentación del taller →</a>
+    </div>
+  </div>
+</header>
+
+<nav aria-label="Secciones"><div class="wrap">
+  <a href="#formula">Fórmula</a><a href="#voz">Tu voz</a><a href="#elementos">Elementos</a><a href="#acceso">Accesibilidad</a><a href="#oral">Presentación</a><a href="#fechas">Fechas</a><a href="#nota">Evaluación</a><a href="#lista">Lista de voces</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="formula">
+  <h2><span class="num">1</span>La fórmula</h2>
+  <p class="sub">Todos los pósters comparten el mismo esqueleto. Juntos forman una galería.</p>
+  <div class="formula"><div class="f">Conoce a <span>[voz]</span>: <span>[acción concreta]</span> por <span>[ODS o causa]</span></div></div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="ex"><b>Conoce a Violeta Parra:</b> recoge canciones campesinas para que no se pierdan.</div>
+    <div class="ex"><b>Conoce a Las Tesis:</b> convierten una denuncia en coro para que ninguna calle sea peligrosa.</div>
+  </div>
+  <p style="margin-top:16px">La acción es un verbo concreto («canta en aymara», no «lucha por la identidad»). La fórmula va como subtítulo; el eslogan es un gancho más corto.</p>
+</section>
+
+<section id="voz">
+  <h2><span class="num">2</span>Cómo eliges tu voz</h2>
+  <p class="sub">Una voz, una persona. Quien la registra primero se la queda.</p>
+  <div class="grid g3">
+    <div class="card el"><h3>Lun 26 oct</h3><p>En el taller de Canva escribes tu línea «Conoce a… por…».</p></div>
+    <div class="card el gold"><h3>Vie 30 oct</h3><p>Tu voz queda registrada en la hoja compartida. Después, cambios solo avisando.</p></div>
+    <div class="card el plum"><h3>Reglas</h3><p>No repites la voz de tu podcast ni las vistas en clase. Debe tocar al menos un ODS y conectar con tu tensión.</p></div>
+  </div>
+  <div class="note"><b>Antes de diseñar:</b> una página (≈300 palabras) con qué hizo o hace esa voz, por qué, qué ODS toca, <b>al menos una fuente primaria</b> (canción, comunicado, entrevista) y una secundaria. Te sirve para defender el póster y puede ir en tu página web.</div>
+</section>
+
+<section id="elementos">
+  <h2><span class="num">3</span>Tu póster debe incluir</h2>
+  <p class="sub">Siete piezas. Menos texto, más imagen.</p>
+  <div class="grid g3">
+    <div class="card el"><h3>Imagen dominante</h3><p>Comunica sin texto. Con crédito y licencia.</p></div>
+    <div class="card el"><h3>Eslogan</h3><p>Breve y memorable. Se entiende en 5 segundos.</p></div>
+    <div class="card el"><h3>Fórmula «Conoce a…»</h3><p>Voz, acción concreta y causa, con el número del ODS visible.</p></div>
+    <div class="card el gold"><h3>Llamado a la acción</h3><p>Escuchar, compartir, apoyar, firmar: lo que quieres que haga tu público.</p></div>
+    <div class="card el gold"><h3>Texto de apoyo</h3><p>Dos o tres líneas como máximo.</p></div>
+    <div class="card el plum"><h3>Crédito a la voz</h3><p>Su nombre y un enlace o código QR a su trabajo original.</p></div>
+  </div>
+  <p style="margin-top:16px"><b>Y tu firma</b> como autora o autor de la campaña.</p>
+</section>
+
+<section id="acceso">
+  <h2><span class="num">4</span>Accesibilidad</h2>
+  <p class="sub">Se evalúa. La presentación del taller te enseña a comprobarlo.</p>
+  <div class="card"><ul class="check">
+    <li>Contraste mínimo <b>4.5:1</b> (meta 7:1). Compruébalo en el verificador de WebAIM.</li>
+    <li>Tamaños mínimos: título <b>36 pt</b>, cuerpo <b>24 pt</b>, pies <b>18 pt</b>.</li>
+    <li>Fuente sans-serif. El color nunca es el único indicador; prueba tu póster en Coblis.</li>
+    <li>Exporta en PNG o PDF y también en formato web desde Canva.</li>
+    <li>Escribe un texto alternativo para la imagen: lo necesitarás en tu página de diciembre.</li>
+  </ul></div>
+</section>
+
+<section id="oral">
+  <h2><span class="num">5</span>Presentación oral en español</h2>
+  <p class="sub">Entre 4 y 6 minutos, sin cronómetro: algunas personas necesitan más tiempo que otras. Puedes usar notas, pero no leas.</p>
+  <div class="grid g3">
+    <div class="card el"><h3>Tu voz</h3><p>¿A quién amplificas? ¿Qué hace? ¿Qué ODS toca?</p></div>
+    <div class="card el gold"><h3>Tus decisiones</h3><p>¿Por qué esta imagen y este eslogan? Diseño y accesibilidad.</p></div>
+    <div class="card el plum"><h3>Tu llamado</h3><p>¿Qué quieres que haga tu público? ¿Cómo se conecta con tu tensión?</p></div>
+  </div>
+</section>
+
+<section id="fechas">
+  <h2><span class="num">6</span>Fechas</h2>
+  <p class="sub">Del taller a tu página web.</p>
+  <ol class="tl">
+    <li><span class="d">Lunes 26 de octubre</span>Taller de Canva. Escribes tu línea «Conoce a… por…».</li>
+    <li><span class="d">Viernes 30 de octubre</span>Voz registrada en la hoja compartida.</li>
+    <li class="big"><span class="d">Miércoles 11 de noviembre</span>Presentaciones, parte 1. Entrega del póster.</li>
+    <li class="big"><span class="d">Viernes 13 de noviembre</span>Presentaciones, parte 2. Entrega del póster.</li>
+    <li><span class="d">30 de noviembre – 4 de diciembre</span>Tu póster aparece en tu página web.</li>
+  </ol>
+</section>
+
+<section id="nota">
+  <h2><span class="num">7</span>Evaluación · 20% de la nota</h2>
+  <p class="sub">Cuatro criterios, 25 % cada uno.</p>
+  <div class="card">
+    <div class="bar"><div class="t"><b>Voz y fuentes</b><small>Precisión, fuente primaria, crédito</small></div><div class="v">25%</div><div class="track"><i style="width:100%"></i></div></div>
+    <div class="bar"><div class="t"><b>Campaña</b><small>Imagen, eslogan, fórmula y llamado a la acción</small></div><div class="v">25%</div><div class="track"><i style="width:100%"></i></div></div>
+    <div class="bar"><div class="t"><b>Accesibilidad</b><small>Contraste, tamaños, color, texto alternativo</small></div><div class="v">25%</div><div class="track"><i style="width:100%"></i></div></div>
+    <div class="bar"><div class="t"><b>Presentación oral</b><small>En español, con tus decisiones de diseño</small></div><div class="v">25%</div><div class="track"><i style="width:100%"></i></div></div>
+  </div>
+  <div class="note"><b>Integridad académica:</b> la IA generativa y los traductores automáticos están prohibidos salvo autorización explícita. Las imágenes deben tener licencia o ser tuyas; cita siempre al autor.</div>
+</section>
+
+<section id="lista">
+  <h2><span class="num">8</span>Lista de voces</h2>
+  <p class="sub">Punto de partida, no lista cerrada. También puedes proponer otra voz con mi visto bueno. Registra la tuya en la hoja compartida.</p>
+  <div class="chips" id="chips" role="group" aria-label="Filtrar por tipo"></div>
+  <div class="vgrid" id="vgrid" aria-live="polite"></div>
+</section>
+
+</main>
+
+<footer><div class="wrap"><p>SPAN 2156 · Fall 2026 · Prof. Liliana Naranjo · Louisiana State University</p></div></footer>
+
+<script>
+const V=[
+["Violeta Parra","Chile","Música",[10,16]],["Las Tesis","Chile","Colectivo artístico",[5,16]],
+["Ana Tijoux","Chile","Música",[10,16]],["Susana Baca","Perú","Música",[10,16]],
+["Lila Downs","México","Música",[10,4]],["Mare Advertencia Lirika","México (Oaxaca)","Música",[5,10]],
+["Sara Curruchich","Guatemala","Música",[5,10]],["Totó la Momposina","Colombia","Música",[10,16]],
+["ChocQuibTown","Colombia (Pacífico)","Música",[10,16]],["Rita Indiana","República Dominicana","Música",[5,10]],
+["Quilapayún","Chile","Música",[10,16]],["Inti-Illimani","Chile","Música",[10,16]],
+["Ni Una Menos","Argentina","Movimiento",[5,16]],["Madres de Plaza de Mayo","Argentina","Movimiento",[16]],
+["Mujeres Creando","Bolivia","Colectivo artístico",[5,10]],["Mujeres de Sepur Zarco","Guatemala","Movimiento",[5,16]],
+["Las Patronas","México (Veracruz)","Colectivo",[2,10]],["Marielle Franco","Brasil","Líder política",[5,10,11]],
+["Francia Márquez","Colombia","Líder política",[10,15,16]],["Movimiento Sin Tierra (MST)","Brasil","Movimiento",[2,15]],
+["Parque de la Papa","Perú (Cusco)","Comunidad",[2,15]],["Radio Teocelo","México (Veracruz)","Medio comunitario",[10,16]],
+["Marcha das Margaridas","Brasil","Movimiento",[5,8]]
+];
+const types=["Todas",...new Set(V.map(v=>v[2]))];
+const chips=document.getElementById("chips"),grid=document.getElementById("vgrid");
+let cur="Todas";
+function render(){
+  grid.innerHTML="";
+  V.filter(v=>cur==="Todas"||v[2]===cur).forEach(v=>{
+    const d=document.createElement("div");d.className="voice";
+    const h=document.createElement("h3");h.textContent=v[0];
+    const m=document.createElement("p");m.className="m";m.textContent=v[1]+" · "+v[2];
+    d.append(h,m);
+    v[3].forEach(o=>{const s=document.createElement("span");s.className="ods";s.textContent="ODS "+o;d.append(s)});
+    grid.append(d);
+  });
+  [...chips.children].forEach(c=>c.setAttribute("aria-pressed",c.textContent===cur));
+}
+types.forEach(t=>{const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=t;b.onclick=()=>{cur=t;render()};chips.append(b)});
+render();
+</script>
+</body>
+</html>
